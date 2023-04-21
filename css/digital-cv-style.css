@@ -1,0 +1,147 @@
+/* Charter */
+
+.charter-list {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 30px;
+  min-height: 100vh;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.charter-item {
+  padding: 0 20px;
+}
+
+.charter-item > h1 {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.charter-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.charter-item li {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 10px 0;
+}
+
+.charter-item .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.charter-item svg {
+  width: 30px;
+  height: 30px;
+}
+
+.charter-item .detail {
+  padding-left: 20px;
+}
+
+.charter-item .title {
+  font-weight: bold;
+}
+
+#goals-scopes,
+#team-primary {
+  display: grid;
+  grid-template-rows: 6fr 4fr;
+  gap: 30px;
+}
+
+/* Goals */
+
+#goals li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Scopes */
+
+.scope-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.scope-item {
+  margin-left: 20px;
+}
+
+.scope-item h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Timeline */
+
+#timeline li {
+  margin-bottom: 15px;
+}
+
+.number {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #9e88ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #000 solid 2px;
+  border-radius: 50%;
+}
+
+.number-icon div {
+  color: #fff;
+  font-size: 30px;
+}
+
+#timeline .detail {
+  border-bottom: rgba(0, 0, 0, 0.2) 1px dashed;
+  padding-bottom: 10px;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 768px) {
+  /* Charter */
+
+  .charter-list {
+    grid-template-columns: 1fr;
+  }
+
+  .charter-item li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Goals and Scopes */
+
+  #goals-scopes,
+  #team-primary {
+    grid-template-rows: auto;
+  }
+
+  /* Scopes */
+
+  .scope-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Timeline */
+
+  .number {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,84 @@
+@media (max-width: 500px) {
+  /* Nav bar */
+
+  #nav-bar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #nav-bar a {
+    border: none !important;
+    padding: 20px 50px;
+  }
+
+  /* About */
+
+  #about > div {
+    flex-direction: column;
+  }
+
+  #target,
+  #personal-info {
+    width: 100%;
+  }
+
+  /* Thông tin cá nhân */
+
+  #job-info .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  /* Chứng chỉ */
+
+  .certificate-list-row {
+    flex-direction: column;
+    border: none;
+    padding: 0;
+  }
+
+  .certificate-item {
+    width: 100%;
+    padding-left: 0 !important;
+    border-left: none !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: #d6c08d 1px solid;
+  }
+
+  .certificate-list-row:last-child .certificate-item:last-child {
+    border: none;
+  }
+
+  .certificate-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .certificate-content {
+    margin-left: 10px;
+  }
+
+  /* Dự án */
+
+  .project-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-feature > div {
+    margin-top: 10px;
+  }
+
+  /* Footer */
+
+  .footer-item > div {
+    display: none;
+  }
+}
